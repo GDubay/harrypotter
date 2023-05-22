@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harry Potter - Casas</title>
+
+        <link rel="stylesheet" type="text/css" href="estilo.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" type="text/css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" type="text/css"></link>
+
+
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    </head>
+    <body>
+        <section class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="casas.html">Casas</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+            </ul>
+        </section>
+        <div class="slider-casas">
+            <div class="item">
+                <img src="casa1.jpeg" />
+                <span>Nome da casa</span>
+            </div>
+            <div class="item">
+                <img src="casa2.jpeg" />
+                <span>Nome da casa</span>
+            </div>
+            <div class="item">
+                <img src="casa3.jpeg" />
+                <span>Nome da casa</span>
+            </div>    
+            
+            <div class="item">
+                <img src="casa1.jpeg" />
+                <span>Nome da casa</span>
+            </div>
+            <div class="item">
+                <img src="casa2.jpeg" />
+                <span>Nome da casa</span>
+            </div>
+            <div class="item">
+                <img src="casa3.jpeg" />
+                <span>Nome da casa</span>
+            </div>             
+        </div>
+
+        <script type="text/javascript">
+            $('.slider-casas').slick({
+                dots:false,
+                infinite:true,
+                nav: true,
+                speed:500,
+                slidesToShow:3,
+                slidesToScroll:1
+            });
+        </script>
+
+
+        <a href="javascript:history.back()">Voltar</a>
+    </body>    
+</html>
