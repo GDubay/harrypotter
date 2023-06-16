@@ -1,0 +1,120 @@
+.topo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul:not(.destaque) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex ;
+    justify-content: center;
+    width: calc( 100% - 600px);
+  padding-left: 300px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #c43636;
+  }
+  
+  .active {
+    background-color: #093b1c;
+  }
+ h1{
+  background-image: url(lletra.png);
+  padding: 34px 16px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: block;
+ 
+  width: 100%;
+ }
+ .destaque img{
+  width: 30px;
+ }
+ .destaque{
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex ;
+    justify-content: center;
+  width: 300px;
+ }
+body{
+    background-image: url('carversa.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+.slider-casas .item{
+    text-align: center;
+}
+
+.slider-casas .item img{
+    margin:0 auto;
+}
+
+.slider-casas .item span{
+    color: aliceblue;
+}
+
+.slider-casas{
+    margin-top: 200px;
+}
+
+
+.slider-casas .slick-prev{
+    left:0px;
+    z-index: 1;
+}
+
+.slider-casas .slick-next {
+    right: 0px;
+  }
+.slider-casas .slick-next::before {
+      content: '';
+      background-image: url('varinha.jpg');
+      height: 30px;
+      width: 30px;
+      display: block;
+      background-size: 100%;
+  }
+
+.slider-casas .slick-prev::before {
+    content: '';
+    background-image: url('varinha.jpg');
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-size: 100%;
+}
+
+
+.inativo{
+    display:none;
+    color:aquamarine;
+}
+.ativo{
+  display: block;
+  color:aquamarine;
+}
+.descricao-livros > div:not(.ativo){
+display: none;
+}
