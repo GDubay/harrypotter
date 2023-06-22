@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-ul:not(.destaque) {
+.topo ul:not(.destaque) {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ ul:not(.destaque) {
   }
   
   li a:hover:not(.active) {
-    background-color: #c43636;
+    background-color: #145e3b;
   }
   
   .active {
@@ -57,7 +57,7 @@ ul:not(.destaque) {
   width: 300px;
  }
 body{
-    background-image: url('carversa.png');
+    background-image: url('cass.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: black;
@@ -76,21 +76,21 @@ body{
 }
 
 .slider-casas{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 
 .slider-casas .slick-prev{
-    left:0px;
+    left:60px;
     z-index: 1;
 }
 
 .slider-casas .slick-next {
-    right: 0px;
+    right: 60px;
   }
 .slider-casas .slick-next::before {
       content: '';
-      background-image: url('varinha.jpg');
+      background-image: url('coruja-branca.svg');
       height: 30px;
       width: 30px;
       display: block;
@@ -99,7 +99,7 @@ body{
 
 .slider-casas .slick-prev::before {
     content: '';
-    background-image: url('varinha.jpg');
+    background-image: url('coruja-branca.svg');
     height: 30px;
     width: 30px;
     display: block;
@@ -112,9 +112,30 @@ body{
     color:aquamarine;
 }
 .ativo{
-  display: block;
+  display: flex;
   color:aquamarine;
 }
 .descricao-livros > div:not(.ativo){
 display: none;
+}
+.descricao-livros{
+  /*! width: 800px; */
+  margin: 70px auto 0;
+  text-align: center;
+  background-color: #33333362;
+}
+.descricao-livros .caracteristicas ul{
+  
+}
+.descricao-livros .caracteristicas ul li{
+  display: flex;
+  align-items: center;
+    width: 100%;
+}
+.descricao-livros .resumo{
+  padding: 30px;
+  line-height: 1.5;
+}
+.descricao-livros .resumo{
+  color: aliceblue;
 }
