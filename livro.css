@@ -1,94 +1,105 @@
-.topo{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.topo ul:not(.destaque) {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex ;
-    justify-content: center;
-    width: calc( 100% - 600px);
-  padding-left: 300px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #145e3b;
-  }
-  
-  .active {
-    background-color: #093b1c;
-  }
- h1{
-  background-image: url(lletra.png);
-  padding: 34px 16px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  display: block;
  
-  width: 100%;
- }
- .destaque img{
-  width: 30px;
- }
- .destaque{
-   list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex ;
-    justify-content: center;
-  width: 300px;
- }
-body{
-    background-image: url('cass.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: black;
-}
 
-.slider-casas .item{
-    text-align: center;
-}
-
-.slider-casas .item img{
-    margin:0 auto;
-}
-
-.slider-casas .item span{
-    color: aliceblue;
-}
-
-.slider-casas{
-    margin-top: 100px;
-}
-
-
-.slider-casas .slick-prev{
-    left:60px;
-    z-index: 1;
-}
-
-.slider-casas .slick-next {
-    right: 60px;
+.topo{
+    display: flex;
+    flex-wrap: wrap;
   }
-.slider-casas .slick-next::before {
+  
+  .topo ul:not(.destaque) {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      display: flex ;
+      justify-content: center;
+      width: calc( 100% - 600px);
+    padding-left: 300px;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #bec95fd0;
+    }
+    
+    .active {
+      background-color: #093b1c;
+    }
+   h1{
+    background-image: url(lletra.png);
+    padding: 34px 16px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: block;
+   
+    width: 100%;
+   }
+   .destaque img{
+    width: 30px;
+   }
+   .destaque{
+     list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      display: flex ;
+      justify-content: center;
+    width: 300px;
+   }
+  body{
+      background-image: url('cass.jpg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: black;
+  }
+  
+  .slider-casas .item{
+      text-align: center;
+  }
+  
+  .slider-casas .item img{
+      margin:0 auto;
+  }
+  
+  .slider-casas .item span{
+      color: aliceblue;
+  }
+  
+  .slider-casas{
+      margin-top: 100px;
+  }
+  
+  
+  .slider-casas .slick-prev{
+      left:60px;
+      z-index: 1;
+  }
+  
+  .slider-casas .slick-next {
+      right: 60px;
+    }
+  .slider-casas .slick-next::before {
+        content: '';
+        background-image: url('coruja-branca.svg');
+        height: 30px;
+        width: 30px;
+        display: block;
+        background-size: 100%;
+    }
+  
+  .slider-casas .slick-prev::before {
       content: '';
       background-image: url('coruja-branca.svg');
       height: 30px;
@@ -96,46 +107,47 @@ body{
       display: block;
       background-size: 100%;
   }
-
-.slider-casas .slick-prev::before {
-    content: '';
-    background-image: url('coruja-branca.svg');
-    height: 30px;
-    width: 30px;
-    display: block;
-    background-size: 100%;
-}
-
-
-.inativo{
-    display:none;
-    color:aquamarine;
-}
-.ativo{
-  display: flex;
-  color:aquamarine;
-}
-.descricao-livros > div:not(.ativo){
-display: none;
-}
-.descricao-livros{
-  /*! width: 800px; */
-  margin: 70px auto 0;
-  text-align: center;
-  background-color: #33333362;
-}
-.descricao-livros .caracteristicas ul{
   
-}
-.descricao-livros .caracteristicas ul li{
-  display: flex;
-  align-items: center;
-    width: 100%;
-}
-.descricao-livros .resumo{
-  padding: 30px;
-  line-height: 1.5;
-}
-.descricao-livros .resumo{
-  color: aliceblue;
-}
+  
+  .inativo{
+      display:none;
+      color:aquamarine;
+  }
+  .ativo{
+    display: flex;
+    color:aquamarine;
+  }
+  .descricao-livros > div:not(.ativo){
+  display: none;
+  }
+  .descricao-livros{
+    /*! width: 800px; */
+    margin: 70px auto 0;
+    text-align: center;
+    background-color: #33333362;
+  }
+  .descricao-livros .caracteristicas ul{
+    
+  }
+  .descricao-livros .caracteristicas ul li{
+    display: flex;
+    align-items: center;
+      width: 100%;
+  }
+  .descricao-livros .resumo{
+    padding: 30px;
+    line-height: 1.5;
+  }
+  .descricao-livros .resumo{
+    color: aliceblue;
+  }
+
+
+
+
+
+
+
+
+
+
